@@ -29,6 +29,32 @@ header p {
     font-weight: 600;
 }
 
+body menu {
+    
+}
+
+header ul {
+    
+    padding-bottom: 10px;
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header a:hover {
+    background-color: #477c4d;
+}
+
 main {
     padding: 20px 10px;
     background-color: white;
@@ -44,6 +70,10 @@ section {
     background-color: rgba(255, 255, 255, 0.377);
     max-width: 800px;
     margin: auto;
+}
+
+section p {
+    font-weight: 600;
 }
 
 div.img {
@@ -69,4 +99,11 @@ footer{
     padding: 5px;
     border-radius: 15px;
     margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-variant: small-caps;
 }
