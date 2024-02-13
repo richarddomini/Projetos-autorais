@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog esportivo</title>
     <link rel="shortcut icon" href="Imagens/futebol-icon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/tela.css" media="all">
+    <link rel="stylesheet" href="estilo/style.css" media="screen and (max-width: 800px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>News football</h1>
         <p>Sua fonte de informações do mundo do futebol</p>
-        <menu>
+        <span onclick="menu()" class="material-icons">menu</span>
+        <menu id="menu">
             <ul>
                 <li><a href="">início</a></li>
                 <li><a href="">quem somos</a></li>
@@ -40,5 +44,15 @@
 
         <footer>Site criado por <a href="https://www.instagram.com/richarddomini/" target="_blank">Richard Domini</a></footer>
     </main>
+    <script>
+        function menu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'; 
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
