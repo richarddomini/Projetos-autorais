@@ -17,10 +17,10 @@
         <span onclick="menu()" class="material-icons">menu</span>
         <menu id="menu">
             <ul>
-                <li><a href="">início</a></li>
-                <li><a href="">quem somos</a></li>
-                <li><a href="">contato</a></li>
-                <li><a href="">destaques</a></li>
+                <li><a onclick="nready()" href="">início</a></li>
+                <li><a onclick="nready()" href="">quem somos</a></li>
+                <li><a onclick="nready()" href="">contato</a></li>
+                <li><a onclick="nready()" href="">destaques</a></li>
             </ul>
         </menu>
     </header>
@@ -45,6 +45,11 @@
         <footer>Site criado por <a href="https://www.instagram.com/richarddomini/" target="_blank">Richard Domini</a></footer>
     </main>
     <script>
+
+        function nready() {
+                window.alert('Essa página ainda está em desenvolvimento')
+            }
+
         function menu() {
             var menu = document.getElementById("menu");
             if (menu.style.display == 'none') {
@@ -53,6 +58,9 @@
                 menu.style.display = 'none'
             }
         }
+
+        window.alert('Atenção! O jornalismo neste site é totalmente parcial e suas fontes são extremamente questionáveis')
+
     </script>
 </body>
 </html>
