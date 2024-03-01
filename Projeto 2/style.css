@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Handlee&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #7A1960;
+    --cor2: #9D60A8;
+    --cor3: #601767;
+}
+
+body {
+    background-image: url(imagens/pexels-anni-roenkae-3109807.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+div#container {
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 150px;
+    color: var(--cor1);
+    font-size: 80px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.134);
+}
+
+h1 span { 
+    font-family: "Handlee", cursive;
+}
+
+h2 {
+    padding-bottom: 15px;
+    color: var(--cor1);
+    font-size: 45px;
+}
+
+h3 {
+    color: var(--cor1);
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 10px;
+}
+
+label {
+    color: var(--cor1);
+    font-size: 20px;
+}
+
+input {
+    border-radius: 10px;
+    border: 2px solid #7A1960;
+    width: 200px;
+    height: 20px;
+    padding: 5px 50px 5px 10px;
+}
+
+div#senha {
+    position: relative;
+}
+
+input#submit {
+    background-color: #9D60A8;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    padding: 5px;
+}
+
+input#submit:hover {
+    background-color: #7c4d84;
+    transition: .5s;
+}
+
+div#senha i {
+    position: absolute;
+    top: 16%;
+    right: 29%;
+}
