@@ -1,6 +1,13 @@
-function teste() {
+function shownumbers(x) {
     var visualizador = document.getElementById('visualizador')
-    var nove = document.getElementById('9')
+    var tela = document.getElementById('tela')
 
-    visualizador.innerHTML = `<p>${nove.value} </p>`
+    tela.innerHTML += `${x}`
+}
+
+function reset() {
+    var visualizador = document.getElementById('visualizador')
+    var tela = document.getElementById('tela')
+
+    tela.innerHTML = ""
 }

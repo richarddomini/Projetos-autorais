@@ -10,25 +10,92 @@
     <h1>Calculadora</h1>
     <Article id="main">
         <div id="visualizador">
+            <p id="tela">
 
+            </p>
         </div>
 
         <div id="numeros">
-            <input  class="teclas" type="button" value="+">
-            <input  class="teclas" type="button" value="-">
-            <input  class="teclas" type="button" value="=">
-            <br>
-            <input class="teclas" type="button" value="1">
-            <input class="teclas" type="button" value="2">
-            <input class="teclas" type="button" value="3">
-            <br>
-            <input class="teclas" type="button" value="4">
-            <input class="teclas" type="button" value="5">
-            <input class="teclas" type="button" value="6">
-            <br>
-            <input class="teclas" type="button" value="7">
-            <input class="teclas" type="button" value="8">
-            <input class="teclas" type="button" value="9" id="9" onclick="teste()">
+
+            <table>
+                <tr>
+                    <td>
+                        <input  class="teclas" type="button" value="C"
+                        onclick="reset()">
+                    </td>
+                    <td>
+                        <input  class="teclas" type="button" value=">">
+                    </td>
+                    <td>
+                        <input  class="teclas" type="button" value="X">
+                    </td>
+                    <td><input class="teclas" type="button" value="/">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="teclas" type="button" value="1" onclick="shownumbers(1)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="2" onclick="shownumbers(2)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="3" onclick="shownumbers(3)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="+">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="teclas" type="button" value="4" onclick="shownumbers(4)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="5" onclick="shownumbers(5)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="6" onclick="shownumbers(6)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="-">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input class="teclas" type="button" value="7" onclick="shownumbers(7)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="8" onclick="shownumbers(8)">
+                    </td>
+
+                    <td>
+                        <input class="teclas" type="button" value="9" onclick="shownumbers(9)">
+                    </td>
+
+                    <td rowspan="2">
+                        <input class="teclas" type="button" value="=" id="igual">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="teclas" type="button" id="zero" value="0">
+                    </td>
+                    <td>
+                        <input class="teclas" type="button" value=".">
+                    </td>
+                </tr>
+            </table>
+
         </div>
     </Article>
 </body>

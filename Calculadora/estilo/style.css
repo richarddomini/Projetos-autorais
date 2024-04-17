@@ -24,24 +24,43 @@ article#main {
 }
 
 div#visualizador {
-    height: 50px;
+    height: 80px;
     width: 90%;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 25px auto;
+    margin: 20px auto;
     background-color: rgba(0, 128, 0, 0.488);
+}
+
+div#visualizador p#tela {
+    margin: 20px 0px;
+    height: 40px;
+    font-size: 2em;
+}
+
+table {
+    margin: auto;
 }
 
 div#numeros {
     height: 280px;
-    width: 250px;
-    margin: 20px auto;
-    padding-top: 25px;
+    width: 300px;
+    margin: 10px auto;
+    padding-top: 15px;
     text-align: center;
 }
 
 input.teclas {
     height: 40px;
     width: 60px;
-    margin: 7px;
+    margin: 5px 0px;
+    font-size: 2em;
+}
+
+input#zero {
+    width: 120px;
+}
+
+input#igual {
+    height: 90px;
 }
