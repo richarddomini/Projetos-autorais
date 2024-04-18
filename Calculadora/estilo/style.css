@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "calculator";
+    src: url(../fontes/Calculator.ttf);
+}
 
 *{
     margin: 0%;
@@ -8,6 +12,7 @@
 body {
     height: 100vh;
     width: 100vw;
+    background-color: rgba(0, 0, 0, 0.474);
 }
 
 h1{
@@ -18,24 +23,31 @@ article#main {
     margin: auto;
     height: 400px;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     background-color: rgb(201, 193, 193);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 div#visualizador {
     height: 80px;
     width: 90%;
-    border: 1px solid black;
+    border: 1px solid none;
     border-radius: 5px;
     margin: 20px auto;
     background-color: rgba(0, 128, 0, 0.488);
+    font-family: "calculator";
 }
 
 div#visualizador p#tela {
-    margin: 20px 0px;
+    padding: 10px 0px;
     height: 40px;
-    font-size: 2em;
+    font-size: 3em;
+    overflow: hidden;
+    text-align: right;
 }
 
 table {
@@ -55,6 +67,7 @@ input.teclas {
     width: 60px;
     margin: 5px 0px;
     font-size: 2em;
+    cursor: pointer;
 }
 
 input#zero {

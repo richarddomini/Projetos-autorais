@@ -24,12 +24,12 @@
                         onclick="reset()">
                     </td>
                     <td>
-                        <input  class="teclas" type="button" value=">">
+                        <input  class="teclas" type="button" value="<"onclick="backspace()">
                     </td>
                     <td>
-                        <input  class="teclas" type="button" value="X">
+                        <input  class="teclas" type="button" value="X" onclick="shownumbers('*')">
                     </td>
-                    <td><input class="teclas" type="button" value="/">
+                    <td><input class="teclas" type="button" value="/"onclick="shownumbers('/')">
                     </td>
                 </tr>
 
@@ -47,7 +47,7 @@
                     </td>
 
                     <td>
-                        <input class="teclas" type="button" value="+">
+                        <input class="teclas" type="button" value="+"onclick="shownumbers('+')">
                     </td>
                 </tr>
 
@@ -65,7 +65,7 @@
                     </td>
 
                     <td>
-                        <input class="teclas" type="button" value="-">
+                        <input class="teclas" type="button" value="-" onclick="shownumbers('-')">
                     </td>
                 </tr>
                 
@@ -83,15 +83,15 @@
                     </td>
 
                     <td rowspan="2">
-                        <input class="teclas" type="button" value="=" id="igual">
+                        <input class="teclas" type="button" value="=" onclick="result()" id="igual">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input class="teclas" type="button" id="zero" value="0">
+                        <input class="teclas" type="button" id="zero" value="0" onclick="shownumbers(0)">
                     </td>
                     <td>
-                        <input class="teclas" type="button" value=".">
+                        <input class="teclas" type="button" value="." onclick="shownumbers('.')">
                     </td>
                 </tr>
             </table>
