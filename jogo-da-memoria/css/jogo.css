@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/wp4886568.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
