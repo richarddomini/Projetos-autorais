@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(../imagens/wp4886568.png);
+    background-image: url(../imagens/fundo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,10 +21,10 @@ body {
 
 .card {
     background-color: black;
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/4;
     width: 100%;
     position: relative;
-    transition: all 1.5s ease;
+    transition: all .5s ease;
     transform-style: preserve-3d;
 }
 
@@ -41,12 +41,11 @@ body {
 }
 
 .front {
-    background-image: url(../imagens/7c568630bc0d828641dabaed0bd1b5bd.jpg);
     border: 1px solid white;
     transform: rotatey(180deg);
 }
 
 .back {
-    background-image: url(../imagens/7c41ac7fc7b87bf341f4fe3248735f931530359800_full.jpg);
+    background-image: url(../imagens/carta_fundo.jpg);
     backface-visibility: hidden;
 }
