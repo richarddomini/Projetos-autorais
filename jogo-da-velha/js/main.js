@@ -9,6 +9,7 @@ button.onclick = function () {
         var v1 = document.querySelector(`.l${l}.c${c}`
         )
         v1.classList.remove('X')
+        v1.innerHTML = ' '
         v1.classList.remove('O')
         }
     }
@@ -45,10 +46,12 @@ function marcador({target}) {
     } else {
         if (cont%2 == 0) {
         target.classList.add('X')
+        target.innerHTML = 'X'
         vencedor()
         cont++
         } else {
         target.classList.add('O')
+        target.innerHTML = 'O'
         vencedor()
         cont++
         }
@@ -57,7 +60,7 @@ function marcador({target}) {
      
 }
 
-function verificador() {
+function verificador(event) {
     for (var n = 1; n < 4; n++) {
     var v1 = document.querySelector(`.l${n}.c1`)
     var v2 = document.querySelector(`.l${n}.c2`)
