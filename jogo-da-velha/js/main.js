@@ -129,12 +129,18 @@ function vencedor() {
             paragra.innerHTML = `O JOGADOR <span>O</span> GANHOU`
         }
 
-        dialog.showModal()
+        function intervalo() {
+            dialog.showModal()
+        }
+        setTimeout(intervalo, 300)
 
         } else if (cont > 7) {
 
         paragra.innerHTML = `DEU VELHA`
-        dialog.showModal()
+        function intervalo() {
+            dialog.showModal()
+        }
+        setTimeout(intervalo, 300)
 
         } else if (cont%2 == 1) {
                 instru.innerHTML = 'VEZ DO JOGADOR <span>X</span>'
