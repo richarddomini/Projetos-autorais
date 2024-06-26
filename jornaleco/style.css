@@ -72,8 +72,8 @@ span {
     margin: 0px 1px;
 }
 
-@media screen and (max-width: 800) {
+@media screen and (max-width: 800px) {
     #introducao {
-        color: black;
+    justify-content: left;    
     }
 } 
