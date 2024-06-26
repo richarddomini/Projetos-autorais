@@ -24,7 +24,10 @@ span.material-symbols-outlined {
     width: 100vw;
     align-items: center;
     justify-content: center;
+}
 
+.barra{
+    display: none;
 }
 
 #logo span {
@@ -73,7 +76,34 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-    #introducao {
-    justify-content: left;    
+    header {
+        justify-content: right;
+    }
+
+    #introducao  {
+        justify-content: left;    
+    }
+
+    .barra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        border-radius: 100px;
+        position: absolute;
+        right: 1px;
+    }
+
+    .barra:hover {
+        color: rgb(94, 87, 87);
+        background-color: rgba(255, 251, 251, 0.804);
+    }
+
+    nav#menu {
+        display: ;
+        position: absolute;
+        right: 1px;
     }
 } 
