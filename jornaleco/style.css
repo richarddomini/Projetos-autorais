@@ -16,17 +16,17 @@ header {
 
     font-family: "Open Sans", sans-serif;
 
-    height: 12vh;
+    height: 12.8vh;
     width: 100%;
 
 }
 
 header #jornal_icon {
-    font-size: 12vw;
+    font-size: 10vw;
 }
 
 header h2 {
-    font-size: 8vw;
+    font-size: 5vw;
 }
 
 header #button_menu {
@@ -50,12 +50,12 @@ header #button_menu:hover {
 }
 
 #menu {
-    display: block;
+    display: none;
 
     position: absolute;
     right: 1px;
 
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.122);
 }
 
 .active {
@@ -76,10 +76,44 @@ header #button_menu:hover {
     text-decoration: none;
     color: rgb(94, 87, 87);
 
-    border-bottom: 1px solid rgb(94, 87, 87);
+    border-bottom: 1px solid rgba(94, 87, 87, 0.442);
 }
 
 #menu a:hover {
     background-color: rgb(94, 87, 87);
     color: rgba(255, 251, 251, 0.804);
+}
+
+@media screen and (min-width: 760px) {
+    header {
+        justify-content: center;
+    }
+
+    header h2 {
+        font-size: 2.2em;
+    }
+
+    header #jornal_icon {
+        font-size: 4em;
+    }
+
+    #button_menu {
+        display: none;
+    }
+
+    #menu {
+        position: relative;
+        display: flex;
+        width: 100%;
+        column-gap: 1px;
+        border: 0px;
+
+        background-color: rgba(94, 87, 87, 0.184);
+    }
+
+    #menu a {
+        background-color: white;
+        width: 25%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.122);
+    }
 }
