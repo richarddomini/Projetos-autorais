@@ -1,15 +1,14 @@
-const openMenu = document.querySelector('#openMenu')
-const shutMenu = document.querySelector('#shutMenu')
+const button_menu = document.querySelector('#button_menu')
 const menu = document.querySelector('#menu')
 
-openMenu.addEventListener('click', onlyOpen)
-shutMenu.addEventListener('click', onlyShut)
+button_menu.addEventListener('click',OpenClose)
 
-function onlyOpen() {
-    menu.style.display = 'block'
- }
-
- function onlyShut() {
-    menu.style.display = 'none'
- }
-
+function OpenClose() {
+    if(menu.style.display == 'block') {
+        menu.style.display = 'none'
+        button_menu.classList.remove('active')
+    } else {
+        menu.style.display = 'block'
+        button_menu.classList.add('active')
+    }
+}
