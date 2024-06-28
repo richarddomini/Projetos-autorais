@@ -16,5 +16,7 @@ function OpenClose() {
 }
 
 function openMenu() {
+    if (body.clientWidth > 800) {
     menu.style.display = 'flex'
+    }
 }
