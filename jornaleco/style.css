@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@keyframes transition {
+    from{
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
 
 *{
     margin: 0%;
@@ -8,6 +14,12 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER*/
 
 header {
     display: flex;
@@ -19,6 +31,9 @@ header {
     height: 12.8vh;
     width: 100%;
 
+    background-attachment: fixed;
+
+    position: relative;
 }
 
 header #jornal_icon {
@@ -29,37 +44,114 @@ header h2 {
     font-size: 5vw;
 }
 
-header #button_search {
+/*  BOX SEARCH */
+
+header > .box_search {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
     position: absolute;
     right: 50px;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-
-    text-align: center;
-    align-content: center;
-
-    border-radius: 100%;
-
+    top: 25px;
 }
 
-header #button_menu {
+header .box_search.active {
+    width: 90%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50px;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header .box_search #button_search {
+    display: flex;
+    cursor: pointer;
+    min-width: 40px;
+    
+    
+    background-color: rgb(94, 87, 87);
+    color: rgba(255, 251, 251, 0.804);
+
+    border: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+}
+
+header .box_search #button_search.active {
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 10%;
+    background-color: white;
+    color: rgb(94, 87, 87);
+    border-right: 1px solid rgba(0, 0, 0, 0.067);
+}
+
+header .box_search #txt_search, header .box_search #button_back {
+    display: none;
+}
+
+header .box_search #txt_search.active{
+    display: flex;
+    width: 75%;
+    border-radius: 0px 15px 15px 0px;
+    outline: 0px;
+    border: none;
+}
+
+header .box_search #button_back.active {
+    display: flex;
+    background-color: white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: rgb(94, 87, 87);
+    cursor: pointer;
+}
+
+/* box search */
+
+header button#button_menu {
     position: absolute;
     right: 5px;
+
+    background-color: rgb(94, 87, 87);
+    color: rgba(255, 251, 251, 0.804);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     cursor: pointer;
     
     height: 40px;
     width: 40px;
 
-    text-align: center;
-    align-content: center;
-
     border-radius: 100px;
+
+    border: 1px;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+header button#button_menu.active {
+    background-color: white;
+    color: rgb(94, 87, 87);
+    transform: rotate(180deg);
 
     transition-timing-function: ease;
     transition-duration: 0.5s;
 }
+
+/* header */
 
 #menu {
     display: none;
@@ -70,15 +162,8 @@ header #button_menu {
     border: 1px solid rgba(0, 0, 0, 0.122);
     border-top: 0px;
 
-}
-
-.active {
-    background-color: rgba(255, 251, 251, 0.804);
-    color: rgb(94, 87, 87);
-    transform: rotate(180deg);
-
-    transition-timing-function: ease;
-    transition-duration: 0.5s;
+    animation-name: transition;
+    animation-duration: 0.8s;
 }
 
 #menu span {
@@ -119,7 +204,7 @@ header #button_menu {
         font-size: 4em;
     }
 
-    #button_menu {
+    button#button_menu {
         display: none;
     }
 
