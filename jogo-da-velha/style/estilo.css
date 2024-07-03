@@ -11,10 +11,8 @@
 
 @keyframes dialog {
     from {
-        height: 100px;
         opacity: 0%;
     } to {
-        height: 200px;
         opacity: 100%;
     }
 }
@@ -218,7 +216,7 @@ dialog {
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.173);
 
     animation-name: dialog;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
 }
 
 dialog::backdrop {
