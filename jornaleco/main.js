@@ -3,10 +3,16 @@ const menu = document.querySelector('#menu')
 
 
 const button_menu = document.querySelector('#button_menu')
+
 const button_search = document.querySelector('#button_search')
     const txt_search = document.querySelector('#txt_search')
     const box_search = document.querySelector('.box_search')
     const button_back = document.querySelector('#button_back')
+
+if (body.width >=760) {
+    button_menu.style.display = 'none'
+    menu.style.display = 'flex'
+}
 
 button_search.addEventListener('click', searchBar)
 button_back.addEventListener('click', closeSearchBar)
@@ -27,12 +33,13 @@ function closeSearchBar() {
     box_search.classList.remove('active')
     button_search.classList.remove('active')
     button_back.classList.remove('active')
+    if (body.clientWidth < 759) {
     button_menu.style.display = 'flex'
-
-    
-document.querySelector('header h2').style.display = 'flex'
-document.querySelector('#jornal_icon').style.display = 'flex'
+    }    
+    document.querySelector('header h2').style.display = 'flex'
+    document.querySelector('#jornal_icon').style.display = 'flex'
 }
+
 
 button_menu.addEventListener('click',OpenClose)
 body.addEventListener('resize', openMenu)
@@ -49,7 +56,5 @@ function OpenClose() {
 }
 
 function openMenu() {
-    if (body.clientWidth > 760) {
     menu.style.display = 'flex'
-    } 
 }

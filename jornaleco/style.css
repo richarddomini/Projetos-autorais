@@ -42,6 +42,7 @@ header #jornal_icon {
 
 header h2 {
     font-size: 5vw;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.132);
 }
 
 /*  BOX SEARCH */
@@ -56,6 +57,9 @@ header > .box_search {
     position: absolute;
     right: 50px;
     top: 25px;
+
+    transition-timing-function: ease;
+    transition-duration: 0.1s;
 }
 
 header .box_search.active {
@@ -64,6 +68,9 @@ header .box_search.active {
     background-color: white;
     border-radius: 50px;
     align-items: center;
+
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.181);
+
     left: 50%;
     transform: translate(-50%);
 }
@@ -102,7 +109,7 @@ header .box_search #txt_search.active{
     display: flex;
     width: 75%;
     border-radius: 0px 15px 15px 0px;
-    outline: 0px;
+    outline: none;
     border: none;
 }
 
@@ -139,7 +146,7 @@ header button#button_menu {
 
     border: 1px;
     transition-timing-function: ease;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 header button#button_menu.active {
@@ -148,7 +155,7 @@ header button#button_menu.active {
     transform: rotate(180deg);
 
     transition-timing-function: ease;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 /* header */
@@ -204,7 +211,7 @@ header button#button_menu.active {
         font-size: 4em;
     }
 
-    button#button_menu {
+    header button#button_menu {
         display: none;
     }
 
