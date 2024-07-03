@@ -35,6 +35,14 @@
     }
 }
 
+@keyframes traco_diagonal {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
 .traco_vertical {
     position: absolute;
     height: 380px;
@@ -92,6 +100,36 @@
     top: 89%;
     left: 50%;
     transform: translate(-50%,-75%);
+}
+
+.traco_diagonal_principal {
+    position: absolute;
+    height: 8px;
+    width: 530px;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 50%;
+
+    transform: rotate(46deg);
+    top: 65.5%;
+    left: 15.5%;
+
+    animation-name: traco_diagonal;
+    animation-duration: 0.5s;
+}
+
+.traco_diagonal_secundario {
+    position: absolute;
+    height: 8px;
+    width: 530px;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 50%;
+
+    transform: rotate(135deg);
+    top: 65.5%;
+    left: 15.5%;
+
+    animation-name: traco_diagonal;
+    animation-duration: 0.5s;
 }
 
 *{
@@ -165,6 +203,8 @@ span {
 dialog {
     height: 200px;
     width: 500px;
+    overflow: hidden;
+
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 

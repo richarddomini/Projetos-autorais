@@ -14,6 +14,8 @@ button.onclick = function () {
         v1.classList.remove('O')
         traco.classList.remove('traco_horizontal')
         traco.classList.remove('traco_vertical')
+        traco.classList.remove('traco_diagonal_principal')
+        traco.classList.remove('traco_diagonal_secundario')
         traco.classList.remove(`l${c}`)
         traco.classList.remove(`c${c}`)
         }
@@ -143,6 +145,12 @@ function vencedor() {
             case 6:
                 traco.classList.add('traco_vertical')
                 traco.classList.add('c3')
+                break;
+            case 7:
+                traco.classList.add('traco_diagonal_principal')
+                break;
+            case 8:
+                traco.classList.add('traco_diagonal_secundario')
                 break;
         }
         
