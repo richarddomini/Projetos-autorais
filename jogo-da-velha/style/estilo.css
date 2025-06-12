@@ -273,4 +273,94 @@ dialog button {
         font-size: 22vw;
         line-height: 22vw;
     }
+
+    .traco_vertical {
+        position: absolute;
+        height: 70vw;
+        width: 8px;
+        background-color: rgba(0, 0, 0, 0.911);
+        border-radius: 50%;
+    
+        animation-name: traco_vertical;
+        animation-duration: 0.5s;
+    }
+
+    .traco_vertical.c1 {
+        top: 69.5%;
+        left: 25.5%;
+        transform: translate(-2%,-50%);
+    }
+    
+    .traco_vertical.c2 {
+        top: 69.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .traco_vertical.c3 {
+        top: 69.5%;
+        left: 73%;
+        transform: translate(-20%,-50%);
+    }
+    
+    .traco_horizontal {
+        position: absolute;
+        height: 8px;
+        width: 70vw;
+        background-color: rgba(0, 0, 0, 0.911);
+        border-radius: 50%;
+    
+        animation-name: traco_horizontal;
+        animation-duration: 0.5s;
+    }
+    
+    
+    .traco_horizontal.l1 {
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%,-75%);
+    }
+    
+    .traco_horizontal.l2 {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-75%);
+    }
+    
+    .traco_horizontal.l3 {
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-75%);
+    }
+    
+    .traco_diagonal_principal {
+        position: absolute;
+        height: 8px;
+        width: 80vw;
+        background-color: rgba(0, 0, 0, 0.911);
+        border-radius: 50%;
+    
+        transform: rotate(46deg);
+        top: 69.5%;
+        left: 10.5%;
+    
+        animation-name: traco_diagonal;
+        animation-duration: 0.5s;
+    }
+    
+    .traco_diagonal_secundario {
+        position: absolute;
+        height: 8px;
+        width: 530px;
+        background-color: rgba(0, 0, 0, 0.911);
+        border-radius: 50%;
+    
+        transform: rotate(135deg);
+        top: 65.5%;
+        left: 15.5%;
+    
+        animation-name: traco_diagonal;
+        animation-duration: 0.5s;
+    }
+    
 }

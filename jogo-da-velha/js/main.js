@@ -12,12 +12,6 @@ button.onclick = function () {
         v1.classList.remove('X')
         v1.innerHTML = ' '
         v1.classList.remove('O')
-        traco.classList.remove('traco_horizontal')
-        traco.classList.remove('traco_vertical')
-        traco.classList.remove('traco_diagonal_principal')
-        traco.classList.remove('traco_diagonal_secundario')
-        traco.classList.remove(`l${c}`)
-        traco.classList.remove(`c${c}`)
         }
     }
     cont = 0
@@ -120,39 +114,6 @@ for (var n = 1; n < 4; n++) {
 
 function vencedor() {
     if (verificador() > 0) {
-        
-        switch (verificador()) {
-            case 1:
-                traco.classList.add('traco_horizontal')
-                traco.classList.add('l1')
-                break;
-            case 2:
-                traco.classList.add('traco_horizontal')
-                traco.classList.add('l2')
-                break;
-            case 3:
-                traco.classList.add('traco_horizontal')
-                traco.classList.add('l3')
-                break;
-            case 4:
-                traco.classList.add('traco_vertical')
-                traco.classList.add('c1')
-                break;
-            case 5:
-                traco.classList.add('traco_vertical')
-                traco.classList.add('c2')
-                break;
-            case 6:
-                traco.classList.add('traco_vertical')
-                traco.classList.add('c3')
-                break;
-            case 7:
-                traco.classList.add('traco_diagonal_principal')
-                break;
-            case 8:
-                traco.classList.add('traco_diagonal_secundario')
-                break;
-        }
         
         if (cont%2 == 0) {
             paragra.innerHTML = `O JOGADOR <span>X</span> GANHOU`
